@@ -1,10 +1,16 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { SeguridadModule } from './pages/seguridad/seguridad.module';
 
-const routes: Routes = [];
+const routes: Routes = [
+  {
+    path: '',
+    component: SeguridadModule,
+  },
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
