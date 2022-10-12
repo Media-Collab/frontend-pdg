@@ -1,1 +1,6 @@
-<p>listar works!</p>
+<p *ngIf="estudiantes.length === 0; else elseBlock"> En el momento no existen estudiantes.</p>
+
+<ng-template #elseBlock>
+    <p *ngFor="let estudiante of estudiantes"> {{estudiante}} </p>
+    <button (click)="borrarData()">Borrar estudiantes</button>
+</ng-template>
