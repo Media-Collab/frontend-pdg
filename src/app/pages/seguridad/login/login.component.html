@@ -1,7 +1,9 @@
 <div>
-    <label for="estudiante">Estudiante</label>
-    <input type="text" name="estudiante" [(ngModel)]="inputEstudiante" >
-    <button (click)="addEstudiante()">Enviar estudiante</button>
+  <label for="estudiante">Estudiante</label>
+  <input type="text" name="estudiante" [(ngModel)]="inputEstudiante" />
+  <button (click)="addEstudiante()">Enviar estudiante</button>
 </div>
-
-<app-listar-estudiantes [estudiantes]="estudiantes" (borrarInfo)="borrarData()"></app-listar-estudiantes>
+<app-listar-estudiantes
+  [estudiantes]="estudiantes"
+  (borrarInfo)="borrarData()"
+></app-listar-estudiantes>

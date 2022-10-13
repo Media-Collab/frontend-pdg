@@ -4,18 +4,9 @@ import { LoginComponent } from './login/login.component';
 import { FormsModule } from '@angular/forms';
 import { EstudiantesModule } from '../estudiantes/estudiantes.module';
 
-
 @NgModule({
-  declarations: [
-    LoginComponent
-  ],
-  imports: [
-    CommonModule,
-    FormsModule,
-    EstudiantesModule
-  ],
-  exports: [
-    LoginComponent
-  ]
+  declarations: [LoginComponent],
+  imports: [CommonModule, FormsModule, EstudiantesModule],
+  exports: [LoginComponent],
 })
-export class SeguridadModule { }
+export class SeguridadModule {}
