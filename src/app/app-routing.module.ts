@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './pages/seguridad/login/login.component';
 import { CrearComponent } from './pages/estudiantes/crear/crear.component';
+import { GuardTestGuard } from './guards/guard-test.guard';
+
 const routes: Routes = [
   {
     path: '',
@@ -14,6 +16,7 @@ const routes: Routes = [
   {
     path: 'estudiantes/crear',
     component: CrearComponent,
+    canActivate: [GuardTestGuard],
   },
 ];
 

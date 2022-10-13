@@ -10,9 +10,18 @@
       class="header-link__item"
       >Estudiantes</a
     >
-    <a class="header-link__item">Header 2</a>
-    <a class="header-link__item">Header 3</a>
-    <a class="header-link__item">Header 4</a>
-    <a routerLink="/login" class="header-link__item">Login</a>
+    <a class="header-link__item">Inicio</a>
+    <a class="header-link__item">Blog</a>
+    <a class="header-link__item">Nosotros</a>
+    <a (click)="logout()" class="header-link__item" *ngIf="isLog"
+      >Cerrar sesión</a
+    >
+    <a
+      (click)="login()"
+      routerLink="/login"
+      class="header-link__item"
+      *ngIf="!isLog"
+      >Ingresar</a
+    >
   </div>
 </header>
