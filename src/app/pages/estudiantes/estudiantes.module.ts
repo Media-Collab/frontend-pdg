@@ -1,21 +1,12 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { ListarComponent } from './listar/listar.component';
+import { ListarEstudianteComponent } from './listar/listar.component';
 import { CrearComponent } from './crear/crear.component';
 
-
 @NgModule({
-  declarations: [
-    ListarComponent,
-    CrearComponent
-  ],
-  imports: [
-    CommonModule
-  ],
-  exports:[
-    ListarComponent,
-    CrearComponent
-  ]
+  declarations: [ListarEstudianteComponent, CrearComponent],
+  imports: [CommonModule],
+  exports: [ListarEstudianteComponent, CrearComponent],
 })
-export class EstudiantesModule { }
+export class EstudiantesModule {}

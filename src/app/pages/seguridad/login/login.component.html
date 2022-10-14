@@ -3,6 +3,7 @@
   <input type="text" name="estudiante" [(ngModel)]="inputEstudiante" />
   <button (click)="addEstudiante()">Enviar estudiante</button>
 </div>
+<!-- form control, form group, validations, https://codingpotions.com/angular-formularios -->
 <app-listar-estudiantes
   [estudiantes]="estudiantes"
   (borrarInfo)="borrarData()"
