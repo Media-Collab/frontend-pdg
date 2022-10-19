@@ -6,10 +6,35 @@
   <p *ngFor="let estudiante of estudiantes">{{ estudiante }}</p>
   <button (click)="borrarData()">Borrar estudiantes</button>
 </ng-template>
+<!-- 
+<c-carousel [interval]="0">
+  <c-carousel-inner>
+    <c-carousel-item *ngFor="let slide of slides">
+      <img
+        [src]="slide.src"
+        alt="{{ slide.title }}"
+        class="d-block w-100"
+        loading="lazy"
+      />
+    </c-carousel-item>
+  </c-carousel-inner>
+  <c-carousel-control
+    [routerLink]
+    caption="Previous"
+    direction="prev"
+  ></c-carousel-control>
+  <c-carousel-control
+    [routerLink]
+    caption="Next"
+    direction="next"
+  ></c-carousel-control>
+</c-carousel> -->
 
 <!-- <div *ngFor="let user of users">
   <p>{{ user.id }} - {{ user.first_name }}</p>
 </div> -->
+
+<!--  -->
 
 <!-- <div id="unity-container" class="unity-desktop">
   <canvas

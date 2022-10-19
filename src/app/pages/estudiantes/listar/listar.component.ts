@@ -25,12 +25,33 @@ export class ListarEstudianteComponent implements OnInit {
   @Input() estudiantes: string[] = [];
   @Output() borrarInfo = new EventEmitter<any>();
 
+  slides: any[] = new Array(3).fill({
+    id: -1,
+    src: '',
+    title: '',
+    subtitle: '',
+  });
+
   public users: any = [];
 
   constructor() {}
 
+  onItemChange($event: any): void {
+    console.log('Carousel onItemChange', $event);
+  }
+
   ngOnInit(): void {
-    /* Http.instance
+    this.slides[0] = {
+      src: 'https://i.picsum.photos/id/413/200/200.jpg?hmac=e6w034LWyRaayerJY_efJywx28FwPjv-EC8F10jVtMQ',
+    };
+    this.slides[1] = {
+      src: 'https://i.picsum.photos/id/420/200/200.jpg?hmac=7hdmWb4uHh3ulb7_b_NXZ6QZY_mpCdVcwji4oMqP1Eg',
+    };
+    this.slides[2] = {
+      src: 'https://i.picsum.photos/id/677/200/200.jpg?hmac=x54KZ3q80hA0Sc36RV2FUoDZdE3R31oaC988MA1YE2s',
+    };
+
+    Http.instance
       .get('users')
       .then((res: any) => {
         console.log('res: ', res);
@@ -39,7 +60,8 @@ export class ListarEstudianteComponent implements OnInit {
       .catch((err: any) => {
         console.log('err: ', err);
       });
- */
+    /*
+     */
 
     /* var buildUrl = 'assets/demo/Build';
     var config = {

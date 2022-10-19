@@ -1,27 +1,36 @@
-<header class="header">
+<!-- <header class="header">
   <div class="header-logo">
     <img src="https://picsum.photos/30/30" alt="logo" />
   </div>
 
   <div class="header-link">
-    <a
-      routerLink="/estudiantes/crear"
-      routerLinkActive="active"
-      class="header-link__item"
-      >Estudiantes</a
-    >
+    
     <a class="header-link__item">Inicio</a>
     <a class="header-link__item">Blog</a>
     <a class="header-link__item">Nosotros</a>
-    <a (click)="logout()" class="header-link__item" *ngIf="isLog"
-      >Cerrar sesión</a
-    >
-    <a
-      (click)="login()"
-      routerLink="/login"
-      class="header-link__item"
-      *ngIf="!isLog"
-      >Ingresar</a
-    >
+    
   </div>
+</header> -->
+
+<header class="header">
+  <img src="https://picsum.photos/30/30" alt="logo" />
+  <ul class="header-nav">
+    <li class="nav-item active">
+      <a
+        routerLink="/estudiantes/crear"
+        routerLinkActive="active"
+        class="nav-link"
+        >Estudiantes<span class="visually-hidden">(current)</span></a
+      >
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Features</a>
+    </li>
+    <li class="nav-item">
+      <a (click)="logout()" class="nav-link" *ngIf="isLog">Cerrar sesión</a>
+      <a (click)="login()" routerLink="/login" class="nav-link" *ngIf="!isLog"
+        >Ingresar</a
+      >
+    </li>
+  </ul>
 </header>

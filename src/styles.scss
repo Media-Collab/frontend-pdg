@@ -1,5 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 // variables
+
+@import "@coreui/coreui/scss/coreui";
+
 :root {
     --color-primary: #f5f5f5;
     --color-secondary: #000;
@@ -17,5 +20,5 @@
   }
   
   body {
-      font-family: var(--font-family);
+      font-family: 'Roboto', sans-serif;
   }
