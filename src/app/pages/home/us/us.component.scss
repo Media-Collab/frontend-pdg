@@ -1,0 +1,23 @@
+.container-card {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-around;
+  height: 12rem;
+  width: 100%;
+  margin: 1rem 0;
+}
+
+.container-card__item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  height: 12rem;
+  width: fit-content;
+}
+
+.container-card__item img {
+  border-radius: 50%;
+  object-fit: cover;
+}
