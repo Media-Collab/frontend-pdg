@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { SeguridadModule } from './pages/seguridad/seguridad.module';
 import { FormsModule } from '@angular/forms';
 import { ComponentsModule } from 'src/app/components/components.module';
+import { HomeModule } from './pages/home/home.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [AppComponent],
@@ -14,7 +16,9 @@ import { ComponentsModule } from 'src/app/components/components.module';
     AppRoutingModule,
     SeguridadModule,
     FormsModule,
+    HomeModule,
     ComponentsModule,
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
