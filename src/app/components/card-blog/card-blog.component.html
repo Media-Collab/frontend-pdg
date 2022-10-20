@@ -1,10 +1,10 @@
 <section class="container-card">
-  <section>
-    <h1>Name</h1>
-    <p>Correo</p>
-    <p>Más información</p>
+  <section class="container-card__item">
+    <h1>{{ name }}</h1>
+    <p>{{ mail }}</p>
+    <a href="{{ url }}">Más información</a>
   </section>
-  <section>
-    <img src="https://picsum.photos/300" alt="imagen_random" />
+  <section class="container-card__item">
+    <img [src]="imgUrl" alt="imagen_random" />
   </section>
 </section>

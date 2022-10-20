@@ -1,15 +1,17 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-card-blog',
   templateUrl: './card-blog.component.html',
-  styleUrls: ['./card-blog.component.scss']
+  styleUrls: ['./card-blog.component.scss'],
 })
 export class CardBlogComponent implements OnInit {
+  @Input() name: string = '';
+  @Input() mail: string = '';
+  @Input() url: string = '';
+  @Input() imgUrl: string = '';
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

@@ -1,4 +1,4 @@
-<header class="header">
+<!-- <header class="header">
   <div class="header-logo">
     <img src="https://picsum.photos/30/30" alt="logo" />
   </div>
@@ -18,9 +18,9 @@
       Ingresar
     </a>
   </div>
-</header>
+</header> -->
 
-<!-- <header class="header">
+<header class="header">
   <img src="https://picsum.photos/30/30" alt="logo" />
   <ul class="header-nav">
     <li class="nav-item active">
@@ -31,9 +31,22 @@
         >Estudiantes<span class="visually-hidden">(current)</span></a
       >
     </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Features</a>
+    <li class="nav-item active">
+      <a routerLink="/inicio" routerLinkActive="active" class="nav-link"
+        >Inicio<span class="visually-hidden">(current)</span></a
+      >
     </li>
+    <li class="nav-item active">
+      <a routerLink="/blog" routerLinkActive="active" class="nav-link"
+        >Blog<span class="visually-hidden">(current)</span></a
+      >
+    </li>
+    <li class="nav-item active">
+      <a routerLink="/nosotros" routerLinkActive="active" class="nav-link"
+        >Nosotros<span class="visually-hidden">(current)</span></a
+      >
+    </li>
+
     <li class="nav-item">
       <a (click)="logout()" class="nav-link" *ngIf="isLog">Cerrar sesión</a>
       <a (click)="login()" routerLink="/login" class="nav-link" *ngIf="!isLog"
@@ -42,4 +55,3 @@
     </li>
   </ul>
 </header>
- -->
