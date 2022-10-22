@@ -7,7 +7,7 @@
   <button (click)="borrarData()">Borrar estudiantes</button>
 </ng-template>
 
-<c-carousel [interval]="0">
+<!-- <c-carousel [interval]="0">
   <c-carousel-inner>
     <c-carousel-item *ngFor="let slide of slides">
       <img
@@ -28,7 +28,7 @@
     caption="Next"
     direction="next"
   ></c-carousel-control>
-</c-carousel>
+</c-carousel> -->
 
 <!-- <div *ngFor="let user of users">
   <p>{{ user.id }} - {{ user.first_name }}</p>
@@ -67,7 +67,7 @@
   height="600"
   style="width: 960px; height: 600px; background: #231f20"
 ></canvas> -->
-<ng-container *ngIf="!isReady">
+<!-- <ng-container *ngIf="!isReady">
   <div class="progress">
     <div
       class="progress-bar"
@@ -80,9 +80,19 @@
   </div>
   <hr />
 </ng-container>
-
 <div
   #unityEl
   id="gameContainer"
   style="display: block; width: 100%; min-height: 0px; margin: auto"
-></div>
+></div> 
+-->
+
+<!-- <canvas
+  id="gameContainer"
+  style="display: block; width: 100%; min-height: 0px; margin: auto"
+></canvas> -->
+
+<canvas id="canvas">
+  HTML5 canvas appears to be unsupported in the current browser.<br />
+  Please try updating or use a different browser.
+</canvas>

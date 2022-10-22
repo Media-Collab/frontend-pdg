@@ -1,10 +1,10 @@
-<c-carousel [interval]="0">
+<c-carousel [interval]="5000">
   <c-carousel-inner>
     <c-carousel-item *ngFor="let slide of slides">
       <img
         [src]="slide.src"
         alt="{{ slide.title }}"
-        class="d-block w-100"
+        class="d-block w-100 imageHeight"
         loading="lazy"
       />
     </c-carousel-item>

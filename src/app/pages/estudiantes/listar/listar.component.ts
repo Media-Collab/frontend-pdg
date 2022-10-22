@@ -51,15 +51,15 @@ export class ListarEstudianteComponent implements OnInit {
       src: 'https://i.picsum.photos/id/677/200/200.jpg?hmac=x54KZ3q80hA0Sc36RV2FUoDZdE3R31oaC988MA1YE2s',
     };
 
-    Http.instance
-      .get('users')
-      .then((res: any) => {
-        console.log('res: ', res);
-        this.users = res;
-      })
-      .catch((err: any) => {
-        console.log('err: ', err);
-      });
+    // Http.instance
+    //   .get('users')
+    //   .then((res: any) => {
+    //     console.log('res: ', res);
+    //     this.users = res;
+    //   })
+    //   .catch((err: any) => {
+    //     console.log('err: ', err);
+    //   });
     /*
      */
 
@@ -123,11 +123,24 @@ export class ListarEstudianteComponent implements OnInit {
       productName: 'pdg-unity',
       productVersion: '1.0',
     }); */
-    const loader = (window as any).UnityLoader;
+
+    // import godot game from assets/build/index.js
+
+    // const loader = (window as any).UnityLoader;
+    // const loader = (window as any).Godot;
+    // console.log('loader: ', loader);
+
+    //  use Godot variable to load the game
+    // this.gameInstance = new loader.instantiate(
+    //   'gameContainer',
+    //   '/assets/build/index.js'
+    // );
+
+    /* 
 
     this.gameInstance = loader.instantiate(
       'gameContainer',
-      `/assets/demo/Build/demo.json`,
+      `/assets/build/index.js`,
       {
         onProgress: (gameInstance: any, progress: number) => {
           this.progress = progress;
@@ -136,7 +149,7 @@ export class ListarEstudianteComponent implements OnInit {
           }
         },
       }
-    );
+    ); */
   }
 
   borrarData() {
