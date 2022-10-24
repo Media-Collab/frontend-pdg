@@ -25,3 +25,40 @@
   font-weight: 600;
 }
  */
+
+c-nav-item  {
+  display: none;
+  visibility: hidden;
+}
+
+.img-logo {
+  display: none;
+  visibility: hidden;
+}
+
+c-dropdown {
+  display: block;
+  visibility: visible;
+}
+
+@media (min-width: 360px) {
+  .img-logo {
+    display: block;
+    visibility: visible;
+  }
+
+
+}
+
+@media (min-width: 768px) {
+  c-dropdown {
+    display: none;
+  visibility: hidden;
+  }
+
+  c-nav-item  {
+    display: block;
+    visibility: visible;
+  }
+
+}

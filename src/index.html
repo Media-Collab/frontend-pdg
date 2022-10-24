@@ -143,20 +143,21 @@
   </head>
   <!-- <script src="/assets/demo/Build/UnityLoader.js"></script> -->
 
+  <script type="text/javascript" src="assets/build/index.js"></script>
   <body class="mat-typography">
     <app-root></app-root>
 
     <div id="status">
       <div
         id="status-progress"
-        style="display: none"
+        style="display: none; visibility: hidden !important"
         oncontextmenu="event.preventDefault();"
       >
         <div id="status-progress-inner"></div>
       </div>
       <div
         id="status-indeterminate"
-        style="display: none"
+        style="display: none; visibility: hidden !important"
         oncontextmenu="event.preventDefault();"
       >
         <div></div>
@@ -168,10 +169,12 @@
         <div></div>
         <div></div>
       </div>
-      <div id="status-notice" class="godot" style="display: none"></div>
+      <div
+        id="status-notice"
+        class="godot"
+        style="display: none; visibility: hidden !important"
+      ></div>
     </div>
-
-    <script type="text/javascript" src="assets/build/index.js"></script>
     <script type="text/javascript">
       //<![CDATA[
 
@@ -230,6 +233,7 @@
               break;
             case "notice":
               statusNotice.style.display = "block";
+              console.log("notice");
               break;
             case "hidden":
               break;
