@@ -7,6 +7,7 @@ import { SeguridadModule } from './pages/seguridad/seguridad.module';
 import { FormsModule } from '@angular/forms';
 import { ComponentsModule } from 'src/app/components/components.module';
 import { HomeModule } from './pages/home/home.module';
+import { TestModule } from './pages/test/test.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
@@ -17,6 +18,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     SeguridadModule,
     FormsModule,
     HomeModule,
+    TestModule,
     ComponentsModule,
     BrowserAnimationsModule,
   ],

@@ -8,6 +8,8 @@ import { ListarEstudianteComponent } from './pages/estudiantes/listar/listar.com
 import { MainComponent } from './pages/home/main/main.component';
 import { BlogComponent } from './pages/home/blog/blog.component';
 import { UsComponent } from './pages/home/us/us.component';
+// test screens
+import { TestComponent } from './pages/test/test/test.component';
 
 const routes: Routes = [
   {
@@ -38,6 +40,10 @@ const routes: Routes = [
   {
     path: 'blog',
     component: BlogComponent,
+  },
+  {
+    path: 'test',
+    component: TestComponent,
   },
 ];
 
