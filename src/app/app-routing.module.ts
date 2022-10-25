@@ -10,6 +10,12 @@ import { BlogComponent } from './pages/home/blog/blog.component';
 import { UsComponent } from './pages/home/us/us.component';
 // test screens
 import { TestComponent } from './pages/test/test/test.component';
+// docent screens
+import { ProfesorAsignaturasComponent } from './pages/profesor/profesor-asignaturas/profesor-asignaturas.component';
+import { ProfesorMisionesComponent } from './pages/profesor/profesor-misiones/profesor-misiones.component';
+import { ProfesorModulosComponent } from './pages/profesor/profesor-modulos/profesor-modulos.component';
+import { ProfesorActividadesListaComponent } from './pages/profesor/profesor-actividades-lista/profesor-actividades-lista.component';
+import { ProfesorActividadesComponent } from './pages/profesor/profesor-actividades/profesor-actividades.component';
 
 const routes: Routes = [
   {
@@ -44,6 +50,31 @@ const routes: Routes = [
   {
     path: 'test',
     component: TestComponent,
+  },
+  {
+    path: 'asignaturas',
+    component: ProfesorAsignaturasComponent,
+    canActivate: [GuardTestGuard],
+  },
+  {
+    path: 'misiones',
+    component: ProfesorMisionesComponent,
+    canActivate: [GuardTestGuard],
+  },
+  {
+    path: 'modulos',
+    component: ProfesorModulosComponent,
+    canActivate: [GuardTestGuard],
+  },
+  {
+    path: 'actividades-lista',
+    component: ProfesorActividadesListaComponent,
+    canActivate: [GuardTestGuard],
+  },
+  {
+    path: 'actividades-lista/actividad/:id',
+    component: ProfesorActividadesComponent,
+    canActivate: [GuardTestGuard],
   },
 ];
 
