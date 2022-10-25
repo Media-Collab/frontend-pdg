@@ -5,7 +5,7 @@ import { ProfesorModulosComponent } from './profesor-modulos/profesor-modulos.co
 import { ProfesorActividadesComponent } from './profesor-actividades/profesor-actividades.component';
 import { ProfesorActividadesListaComponent } from './profesor-actividades-lista/profesor-actividades-lista.component';
 import { ProfesorMisionesComponent } from './profesor-misiones/profesor-misiones.component';
-
+import {MatIconModule} from '@angular/material/icon';
 
 
 @NgModule({
@@ -17,7 +17,8 @@ import { ProfesorMisionesComponent } from './profesor-misiones/profesor-misiones
     ProfesorMisionesComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    MatIconModule
   ]
 })
 export class ProfesorModule { }

@@ -57,7 +57,7 @@ const routes: Routes = [
     canActivate: [GuardTestGuard],
   },
   {
-    path: 'misiones',
+    path: 'misiones/:idAsignatura',
     component: ProfesorMisionesComponent,
     canActivate: [GuardTestGuard],
   },
