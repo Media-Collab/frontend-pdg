@@ -78,3 +78,49 @@
     right: 0;
     display: flex;
 }
+
+
+// Card actividades.
+.card-actividades {
+    height: 14rem;
+    width: 100%;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    &:hover {
+        opacity: .7;
+        transition: 1s;
+    }
+}
+
+.card-actividades--title {
+    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 36px;
+    color: #000;
+    margin: 0;
+    z-index: 1;
+}
+
+.container-create button{
+    width: 4rem;
+    height: 4rem;
+}
+
+.icon-button-create{
+    width: 4rem;
+    height: 4rem;
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-center{
+    display: flex;
+    align-items: center;
+}

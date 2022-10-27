@@ -1,5 +1,5 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-profesor-misiones',
@@ -11,7 +11,7 @@ export class ProfesorMisionesComponent implements OnInit, OnDestroy {
   public idAsignatura: number = 0;
   private sub: any;
 
-  constructor(private route: ActivatedRoute) { }
+  constructor(public route: ActivatedRoute, public router : Router ) { }
 
   ngOnInit() {
     this.sub = this.route.params.subscribe(params => {
@@ -21,6 +21,10 @@ export class ProfesorMisionesComponent implements OnInit, OnDestroy {
 
   ngOnDestroy() {
     this.sub.unsubscribe();
+  }
+
+  goToModulos(){
+    this.router.navigate(['modulos', 125]);
   }
 
 }
