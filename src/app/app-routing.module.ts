@@ -58,17 +58,17 @@ const routes: Routes = [
     canActivate: [GuardTestGuard],
   },
   {
-    path: 'misiones',
+    path: 'misiones/:idAsignatura',
     component: ProfesorMisionesComponent,
     canActivate: [GuardTestGuard],
   },
   {
-    path: 'modulos',
+    path: 'modulos/:idMision',
     component: ProfesorModulosComponent,
     canActivate: [GuardTestGuard],
   },
   {
-    path: 'actividades-lista',
+    path: 'actividades-lista/:idModulo',
     component: ProfesorActividadesListaComponent,
     canActivate: [GuardTestGuard],
   },

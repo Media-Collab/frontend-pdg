@@ -1,1 +1,41 @@
-<p>profesor-misiones works!</p>
+<section class="container">
+
+    <section class="container-card">
+        <div class="card-intro" style="background: #3BAEDA;">
+            <h1 class="card-intro--title">Matematicas</h1>
+        </div>
+    </section>
+    
+    
+    <h1 class="section-title">Mis Misiones</h1>
+
+    <section class="container-card">
+        <div class="card-asignatura" style="background: #3BAEDA;" (click)="goToModulos()">
+            <h3 class="card-asignatura--title">Matematicas</h3>
+            <div class="backdrop-shadow--edit">
+                <div class="container-buttons-actions">
+                    <button mat-icon-button class="icon-button-lg">
+                        <mat-icon>edit</mat-icon>
+                    </button>
+                    <button mat-icon-button>
+                        <mat-icon>close</mat-icon>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="card-asignatura" style="background: #9747FF;" (click)="goToModulos()">
+            <h3 class="card-asignatura--title">Ciencias</h3>
+            <div class="backdrop-shadow--edit">
+                <div class="container-buttons-actions">
+                    <button mat-icon-button class="icon-button-lg">
+                        <mat-icon>edit</mat-icon>
+                    </button>
+                    <button mat-icon-button>
+                        <mat-icon>close</mat-icon>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</section>

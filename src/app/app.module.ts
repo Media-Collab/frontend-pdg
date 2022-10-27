@@ -9,6 +9,9 @@ import { ComponentsModule } from 'src/app/components/components.module';
 import { HomeModule } from './pages/home/home.module';
 import { TestModule } from './pages/test/test.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { GridModule } from '@coreui/angular';
+import { MatIconModule } from '@angular/material/icon';
+import { ProfesorModule } from './pages/profesor/profesor.module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -21,6 +24,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     TestModule,
     ComponentsModule,
     BrowserAnimationsModule,
+    GridModule,
+    MatIconModule,
+    ProfesorModule
   ],
   providers: [],
   bootstrap: [AppComponent],

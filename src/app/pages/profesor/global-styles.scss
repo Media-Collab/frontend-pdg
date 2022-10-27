@@ -1,0 +1,126 @@
+.container-card {
+    padding: .2rem 1rem;
+    margin-top: 1rem;
+}
+
+.card-intro {
+    height: 23rem;
+    width: 100%;
+    background: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-intro--title {
+    font-size: 3rem;
+    line-height: 45px;
+    text-align: center;
+    color: #FFFFFF;
+    font-weight: 700;
+}
+
+.card-intro--subtitle {
+    font-size: 2rem;
+    line-height: 75px;
+    text-align: center;
+    color: #FFFFFF;
+    font-weight: 700;
+    margin-top: 1rem;
+}
+
+.section-title {
+    margin: 1.5rem 0;
+}
+
+// Card asignatura.
+.card-asignatura {
+    height: 19rem;
+    width: 100%;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    margin-bottom: 1.8rem;
+    cursor: pointer;
+    position: relative;
+
+    &:hover {
+        opacity: .7;
+        transition: 1s;
+    }
+}
+
+.card-asignatura--title {
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 36px;
+    color: #FFFFFF;
+    margin: 0;
+    z-index: 1;
+}
+
+.backdrop-shadow--edit {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    -webkit-box-shadow: inset 8px -23px 97px 2px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: inset 8px -23px 97px 2px rgba(0, 0, 0, 0.75);
+    box-shadow: inset 8px -23px 97px 2px rgba(0, 0, 0, 0.75);
+}
+
+.container-buttons-actions{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+}
+
+
+// Card actividades.
+.card-actividades {
+    height: 14rem;
+    width: 100%;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    &:hover {
+        opacity: .7;
+        transition: 1s;
+    }
+}
+
+.card-actividades--title {
+    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 36px;
+    color: #000;
+    margin: 0;
+    z-index: 1;
+}
+
+.container-create button{
+    width: 4rem;
+    height: 4rem;
+}
+
+.icon-button-create{
+    width: 4rem;
+    height: 4rem;
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-center{
+    display: flex;
+    align-items: center;
+}

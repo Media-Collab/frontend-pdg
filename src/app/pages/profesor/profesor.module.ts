@@ -5,19 +5,24 @@ import { ProfesorModulosComponent } from './profesor-modulos/profesor-modulos.co
 import { ProfesorActividadesComponent } from './profesor-actividades/profesor-actividades.component';
 import { ProfesorActividadesListaComponent } from './profesor-actividades-lista/profesor-actividades-lista.component';
 import { ProfesorMisionesComponent } from './profesor-misiones/profesor-misiones.component';
-
+import { GridModule } from '@coreui/angular';
+import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
 
 
 @NgModule({
+  imports: [
+    CommonModule,
+    GridModule,
+    MatIconModule,
+    MatButtonModule
+  ],
   declarations: [
     ProfesorAsignaturasComponent,
     ProfesorModulosComponent,
     ProfesorActividadesComponent,
     ProfesorActividadesListaComponent,
-    ProfesorMisionesComponent
+    ProfesorMisionesComponent,
   ],
-  imports: [
-    CommonModule
-  ]
 })
 export class ProfesorModule { }
