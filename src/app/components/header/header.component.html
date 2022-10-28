@@ -69,6 +69,12 @@
         <a [active]="true" cNavLink routerLink="/nosotros">Nosotros</a>
       </c-nav-item>
       <c-nav-item>
+        <a [active]="true" cNavLink routerLink="/asignaturas" *ngIf="isLog">Asignaturas</a>
+      </c-nav-item>
+      <c-nav-item>
+        <a [active]="true" cNavLink routerLink="/resultados" *ngIf="isLog && user.tipo != 'estudiante'">Resultados</a>
+      </c-nav-item>
+      <c-nav-item>
         <a (click)="logout()" cDropdownItem class="nav-link" *ngIf="isLog"
           >Cerrar sesión</a
         >

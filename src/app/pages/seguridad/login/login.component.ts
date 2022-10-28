@@ -6,6 +6,7 @@ import {
   Validators,
 } from '@angular/forms';
 import { ErrorStateMatcher } from '@angular/material/core';
+import { LoginStatusService } from 'src/app/services/login-status.service';
 
 export class MyErrorStateMatcher implements ErrorStateMatcher {
   isErrorState(
@@ -40,7 +41,7 @@ export class LoginComponent implements OnInit {
   public estudiantes: string[] = [];
   public inputEstudiante: string = '';
 
-  constructor() {}
+  constructor(private loginService: LoginStatusService) {}
 
   ngOnInit(): void {}
 
@@ -63,6 +64,13 @@ export class LoginComponent implements OnInit {
 
   login(): void {
     localStorage.setItem('isLog', 'true');
+    const dataUser = {
+      nombre: 'usuarioPrueba',
+      document: '123456',
+      tipo: 'estudiante'
+    }
+    localStorage.setItem('usuario', JSON.stringify(dataUser));
+    this.loginService.updateLogin(true, dataUser);
     console.log('Usuario :', this.inputUsuario);
     console.log('Password :', this.inputPassword);
     // refresh web

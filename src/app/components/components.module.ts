@@ -25,7 +25,7 @@ import { MatIconModule } from '@angular/material/icon';
     GridModule,
     MatIconModule,
     MatToolbarModule,
-    RouterModule,
+    RouterModule
   ],
   exports: [HeaderComponent, FooterComponent, CardBlogComponent],
 })
