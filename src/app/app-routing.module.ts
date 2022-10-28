@@ -10,6 +10,7 @@ import { BlogComponent } from './pages/home/blog/blog.component';
 import { UsComponent } from './pages/home/us/us.component';
 // test screens
 import { TestComponent } from './pages/test/test/test.component';
+import { CreateActivityComponent } from './pages/test/create-activity/create-activity.component';
 // docent screens
 import { ProfesorAsignaturasComponent } from './pages/profesor/profesor-asignaturas/profesor-asignaturas.component';
 import { ProfesorMisionesComponent } from './pages/profesor/profesor-misiones/profesor-misiones.component';
@@ -75,6 +76,10 @@ const routes: Routes = [
     path: 'actividades-lista/actividad/:id',
     component: ProfesorActividadesComponent,
     canActivate: [GuardTestGuard],
+  },
+  {
+    path: 'testActividad',
+    component: CreateActivityComponent,
   },
 ];
 

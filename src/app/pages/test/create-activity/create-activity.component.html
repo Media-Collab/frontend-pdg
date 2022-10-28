@@ -1,0 +1,60 @@
+<mat-grid-list cols="1" rowHeight="20rem">
+  <mat-grid-tile
+    ><div class="activity-display">
+      Sección de actividad (Dado 3D, imagen interactiva)
+    </div></mat-grid-tile
+  >
+  <mat-grid-tile>
+    <section class="activity-card">
+      <h2>{{ activityTitle }}</h2>
+      <h2>Temáticas a abordar</h2>
+      <p>{{ topics }}</p>
+    </section>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <section class="activity-questions">
+      <h2>Comprobación de preguntas</h2>
+      <mat-form-field appearance="fill">
+        <mat-label>¿Insertar alguna pregunta aquí?</mat-label>
+        <input
+          type="text"
+          name="pregunta"
+          matInput
+          [(ngModel)]="inputPregunta"
+          maxlength="250"
+          placeholder="¿Insertar alguna pregunta aquí?"
+          required
+        />
+      </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>¿Insertar alguna pregunta aquí?</mat-label>
+        <input
+          type="text"
+          name="pregunta"
+          matInput
+          [(ngModel)]="inputPregunta"
+          maxlength="250"
+          placeholder="¿Insertar alguna pregunta aquí?"
+          required
+        />
+      </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>¿Insertar alguna pregunta aquí?</mat-label>
+        <input
+          type="text"
+          name="pregunta"
+          matInput
+          [(ngModel)]="inputPregunta"
+          maxlength="250"
+          placeholder="¿Insertar alguna pregunta aquí?"
+          required
+        />
+      </mat-form-field>
+    </section>
+  </mat-grid-tile>
+  <mat-grid-tile
+    ><button type="submit" mat-raised-button color="primary" class="btn-next">
+      Siguiente
+    </button></mat-grid-tile
+  >
+</mat-grid-list>
