@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+declare var configGodot: any;
 
 @Component({
   selector: 'app-create-activity',
@@ -29,14 +30,11 @@ export class CreateActivityComponent implements OnInit {
   public srcMultimediaContent: string =
     'https://www.youtube.com/embed/QvwZyZznWTQ';
 
-  constructor() {}
+  constructor() { }
 
   ngOnInit(): void {
-    // this.srcMultimediaContent =
-    //   this.multimediaContent[this.indexMultimediaContent].src;
+    configGodot("assets/build/index", "assets/build/index.pck", "assets/build/index.wasm");
+    console.log(configGodot);
   }
 
-  public getMultimediaContent() {
-    this.loading = true;
-  }
 }
