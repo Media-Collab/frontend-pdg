@@ -34,7 +34,7 @@ const routes: Routes = [
   {
     path: 'estudiantes/crear',
     component: CrearComponent,
-    canActivate: [GuardTestGuard],
+    //canActivate: [GuardTestGuard],
   },
   {
     path: 'inicio',
