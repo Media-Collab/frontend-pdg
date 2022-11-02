@@ -8,9 +8,10 @@ import { CreateActivityComponent } from './create-activity/create-activity.compo
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatButtonModule } from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
+import { SafePipe } from 'src/app/pipes/safe.pipe';
 
 @NgModule({
-  declarations: [TestComponent, CreateActivityComponent],
+  declarations: [TestComponent, CreateActivityComponent, SafePipe],
   imports: [
     CommonModule,
     FormsModule,
@@ -18,7 +19,7 @@ import { MatInputModule } from '@angular/material/input';
     EstudiantesModule,
     MatGridListModule,
     MatButtonModule,
-    MatInputModule,
+    MatInputModule
   ],
 })
 export class TestModule {}

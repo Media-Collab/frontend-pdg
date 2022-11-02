@@ -32,7 +32,7 @@
 
 <!-- call the function getMultimediaContent in src -->
 <iframe
-  src="{{srcMultimediaContent}}"
+  [src]="srcMultimediaContent | safe"
   width="727"
   height="409"
   title="Descuentos especiales Halloween - Nintendo Switch"
