@@ -1,27 +1,17 @@
-<!-- TODO:
- 1.  Agregar un input para buscador
- 2.  un boton para exportar a excel
- 3. un tabla que se llene con información mock (las columnas son)
-    * opcion
-    * actividad asociada
-    * respuesta
-    * tiempo
- 
--->
-
 <section class="container">
-  <h1 class="section-title title-resultados">Resultados</h1>
+  <!-- <h1 class="section-title title-resultados">Resultados</h1> -->
 
   <div class="container-actions-header">
-    <button mat-icon-button class="icon-button-lg" (click)="exportar()">
-      <mat-icon>download</mat-icon>
-    </button>
     <div class="input-search-container">
       <input type="text" placeholder="Buscar" class="input" />
       <button class="button-search">
         <mat-icon>search</mat-icon>
       </button>
     </div>
+    <p>Descargar resultados</p>
+    <button mat-icon-button class="icon-button-lg" (click)="exportar()">
+      <mat-icon>download</mat-icon>
+    </button>
   </div>
 
   <section class="container-table">

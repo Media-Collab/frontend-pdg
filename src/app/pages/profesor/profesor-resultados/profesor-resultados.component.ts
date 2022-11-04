@@ -8,94 +8,53 @@ import xlsx from 'json-as-xlsx';
 export class ProfesorResultadosComponent implements OnInit {
   data: any[] = [
     {
-      opcion: 'Opcion',
-      actividad: 'Actividad',
-      respuesta: 'Respuesta',
-      tiempo: '23',
+      opcion: '¿Cuánto presupuesto sería si fueran 3 personas?',
+      actividad: 'Actividad: INI ¿Qué vamos a comer?',
+      respuesta: '145',
+      tiempo: '5:24',
     },
     {
-      opcion: 'Opcion',
-      actividad: 'Actividad',
-      respuesta: 'Respuesta',
-      tiempo: '24234',
+      opcion:
+        '¿Cuántas combinaciones se pueden relizar con un dado de resultado 3?',
+      actividad: 'Actividad: KOFER ¿Qué más vamos a llevar?',
+      respuesta: '6',
+      tiempo: '7:42',
     },
     {
-      opcion: 'Opcion',
-      actividad: 'Actividad',
-      respuesta: 'Respuesta',
-      tiempo: '24234',
+      opcion: '¿Qué cantidad se uede obtener si sale un valor de 6?',
+      actividad: 'Actividad: KOFER ¿Qué más vamos a llevar?',
+      respuesta: '16',
+      tiempo: '7:42',
     },
     {
-      opcion: 'Opcion',
-      actividad: 'Actividad',
-      respuesta: 'Respuesta',
-      tiempo: '24234',
+      opcion: 'No hay opción establecia',
+      actividad: 'Actividad: KUGULA ¿Qué vamos a comprar?',
+      respuesta: 'N/A',
+      tiempo: 'N/A',
     },
     {
-      opcion: 'Opcion',
-      actividad: 'Actividad',
-      respuesta: 'Respuesta',
-      tiempo: '24234',
+      opcion: 'No hay opción establecia',
+      actividad: 'Actividad: KUGULA ¿Qué vamos a comprar?',
+      respuesta: 'N/A',
+      tiempo: 'N/A',
     },
     {
-      opcion: 'Opcion',
-      actividad: 'Actividad',
-      respuesta: 'Respuesta',
-      tiempo: '24234',
+      opcion: 'No hay opción establecia',
+      actividad: 'Actividad: KUGULA ¿Qué vamos a comprar?',
+      respuesta: 'N/A',
+      tiempo: 'N/A',
     },
     {
-      opcion: 'Opcion',
-      actividad: 'Actividad',
-      respuesta: 'Respuesta',
-      tiempo: '24234',
+      opcion: 'No hay opción establecia',
+      actividad: 'Actividad: KOFER ¿Qué más vamos a llevar?',
+      respuesta: '16',
+      tiempo: '7:42',
     },
     {
-      opcion: 'Opcion',
-      actividad: 'Actividad',
-      respuesta: 'Respuesta',
-      tiempo: '24234',
-    },
-    {
-      opcion: 'Opcion',
-      actividad: 'Actividad',
-      respuesta: 'Respuesta',
-      tiempo: '24234',
-    },
-    {
-      opcion: 'Opcion',
-      actividad: 'Actividad',
-      respuesta: 'Respuesta',
-      tiempo: '24234',
-    },
-    {
-      opcion: 'Opcion',
-      actividad: 'Actividad',
-      respuesta: 'Respuesta',
-      tiempo: '24234',
-    },
-    {
-      opcion: 'Opcion',
-      actividad: 'Actividad',
-      respuesta: 'Respuesta',
-      tiempo: '24234',
-    },
-    {
-      opcion: 'Opcion',
-      actividad: 'Actividad',
-      respuesta: 'Respuesta',
-      tiempo: '24234',
-    },
-    {
-      opcion: 'Opcion',
-      actividad: 'Actividad',
-      respuesta: 'Respuesta',
-      tiempo: '24234',
-    },
-    {
-      opcion: 'Opcion',
-      actividad: 'Actividad',
-      respuesta: 'Respuesta',
-      tiempo: '53',
+      opcion: 'No hay opción establecia',
+      actividad: 'Actividad: KOFER ¿Qué más vamos a llevar?',
+      respuesta: 'N/A',
+      tiempo: 'N/A',
     },
   ];
 
@@ -105,9 +64,9 @@ export class ProfesorResultadosComponent implements OnInit {
 
   exportar() {
     // console.log("ExportJsonFile", dataTable);
-    let newDate = 'dd-mm-yyyy-HH.MM.ss';
+    let newDate: any = `${new Date().toDateString()} - ${new Date().toLocaleTimeString()}`;
     let settings: any = {
-      fileName: `$Resultados-${newDate}`, // Name of the resulting spreadsheet
+      fileName: `Resultados-${newDate}`, // Name of the resulting spreadsheet
       extraLength: 3, // A bigger number means that columns will be wider
       writeOptions: {
         bookType: 'xlsx',
