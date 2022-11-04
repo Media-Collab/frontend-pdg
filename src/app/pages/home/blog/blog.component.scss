@@ -1,0 +1,13 @@
+.container-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    height: 100vh;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.imageHeight {
+    height: 60vh;
+}

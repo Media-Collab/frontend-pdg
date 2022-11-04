@@ -1,1 +1,17 @@
-<p>blog works!</p>
+<c-carousel [interval]="5000">
+    <c-carousel-inner>
+        <c-carousel-item *ngFor="let slide of slides">
+            <img [src]="slide.src" alt="{{ slide.title }}" class="d-block w-100 imageHeight" loading="lazy" />
+        </c-carousel-item>
+    </c-carousel-inner>
+    <c-carousel-control [routerLink] caption="Previous" direction="prev"></c-carousel-control>
+    <c-carousel-control [routerLink] caption="Next" direction="next"></c-carousel-control>
+</c-carousel>
+
+<app-people 
+    *ngFor="let people of peoples" 
+    [title]="people.title" 
+    [author]="people.author" 
+    [date]="people.date"
+    [imgUrl]="people.imgUrl">
+></app-people>

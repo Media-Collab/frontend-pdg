@@ -8,6 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class CardBlogComponent implements OnInit {
   @Input() name: string = '';
   @Input() mail: string = '';
+  @Input() fecha: string = '';
   @Input() url: string = '';
   @Input() imgUrl: string = '';
 
