@@ -6,6 +6,7 @@ import {
   Validators,
 } from '@angular/forms';
 import { ErrorStateMatcher } from '@angular/material/core';
+import { Router } from '@angular/router';
 import { LoginStatusService } from 'src/app/services/login-status.service';
 
 export class MyErrorStateMatcher implements ErrorStateMatcher {
@@ -41,7 +42,7 @@ export class LoginComponent implements OnInit {
   public estudiantes: string[] = [];
   public inputEstudiante: string = '';
 
-  constructor(private loginService: LoginStatusService) {}
+  constructor(private loginService: LoginStatusService, public router : Router) {}
 
   ngOnInit(): void {}
 
@@ -64,17 +65,23 @@ export class LoginComponent implements OnInit {
 
   login(): void {
     localStorage.setItem('isLog', 'true');
-    const dataUser = {
-      nombre: 'usuarioPrueba',
-      document: '123456',
-      tipo: 'estudiante'
+    let dataUser: any;
+    if(this.inputUsuario.trim() === 'profesor'){
+      dataUser = {
+        nombre: 'profesor',
+        document: '123456',
+        tipo: 'profesor'
+      }
+    }else{
+      dataUser = {
+        nombre: 'estudiante',
+        document: '123456',
+        tipo: 'estudiante'
+      }
     }
+
     localStorage.setItem('usuario', JSON.stringify(dataUser));
     this.loginService.updateLogin(true, dataUser);
-    console.log('Usuario :', this.inputUsuario);
-    console.log('Password :', this.inputPassword);
-    // refresh web
-    // window.location.reload();
-    // this.isLog = true;
+    this.router.navigate(['asignaturas']);
   }
 }
