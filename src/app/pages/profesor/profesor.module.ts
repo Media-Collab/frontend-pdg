@@ -12,6 +12,7 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { SafePipe } from 'src/app/pipes/safe.pipe';
 import { FormsModule } from '@angular/forms';
 import { MatInputModule } from '@angular/material/input';
+import { ProfesorResultadosComponent } from './profesor-resultados/profesor-resultados.component';
 
 @NgModule({
   imports: [
@@ -30,6 +31,7 @@ import { MatInputModule } from '@angular/material/input';
     ProfesorActividadesListaComponent,
     ProfesorMisionesComponent,
     SafePipe,
+    ProfesorResultadosComponent,
   ],
 })
 export class ProfesorModule {}
