@@ -73,7 +73,7 @@ export class ProfesorActividadesComponent implements OnInit {
         this.questions = this.preguntas1;
       } else if (this.idActivity == 23) {
         this.srcMultimediaContent = 'https://www.youtube.com/embed/q0heH1FMCQU';
-        this.activityTitle = 'KUGULA ¿Qué vamos a comprar?';
+        this.activityTitle = 'KOFER ¿Qué vamos a llevar?';
         this.topics = 'Pensamiento crítico';
         this.questions = this.preguntas2;
       } else if (this.idActivity == 11) {
@@ -82,6 +82,7 @@ export class ProfesorActividadesComponent implements OnInit {
         this.activityTitle = 'KUGULA ¿Qué vamos a comprar?';
         this.topics = 'Análisis de problemas';
       }
+      this.questions = this.preguntas2;
     });
   }
 }

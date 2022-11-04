@@ -5,10 +5,12 @@
       <c-col xs="12" md="6" class="p-2">
         <div
           class="card-actividades"
-          style="background: orange"
+          style="background: #05b0a1"
           (click)="goToActividad(23)"
         >
-          <h3 class="card-actividades--title">Lista de compras</h3>
+          <h3 class="card-actividades--title" style="color: white">
+            KOFER ¿Qué vamos a llevar?
+          </h3>
           <div class="backdrop-shadow--edit" *ngIf="user.tipo != 'estudiante'">
             <div class="container-buttons-actions">
               <button mat-icon-button>
@@ -24,10 +26,33 @@
       <c-col xs="12" md="6" class="p-2">
         <div
           class="card-actividades"
-          style="background: orange"
+          style="background: #22254b"
           (click)="goToActividad(47)"
         >
-          <h3 class="card-actividades--title">Lista de compras</h3>
+          <h3 class="card-actividades--title" style="color: white">
+            INU ¿Qué vamos a comer?
+          </h3>
+          <div class="backdrop-shadow--edit" *ngIf="user.tipo != 'estudiante'">
+            <div class="container-buttons-actions">
+              <button mat-icon-button class="icon-button-lg">
+                <mat-icon>edit</mat-icon>
+              </button>
+              <button mat-icon-button>
+                <mat-icon>close</mat-icon>
+              </button>
+            </div>
+          </div>
+        </div>
+      </c-col>
+      <c-col xs="12" md="6" class="p-2">
+        <div
+          class="card-actividades"
+          style="background: #fecb35"
+          (click)="goToActividad(11)"
+        >
+          <h3 class="card-actividades--title" style="color: white">
+            KUGULA ¿Qué vamos a comprar?
+          </h3>
           <div class="backdrop-shadow--edit" *ngIf="user.tipo != 'estudiante'">
             <div class="container-buttons-actions">
               <button mat-icon-button class="icon-button-lg">
