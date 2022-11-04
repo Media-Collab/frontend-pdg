@@ -83,7 +83,7 @@ const routes: Routes = [
     component: CreateActivityComponent,
   },
   {
-    path: '/resultados',
+    path: 'resultados',
     component: ProfesorResultadosComponent,
     canActivate: [GuardTestGuard],
   },
