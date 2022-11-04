@@ -13,14 +13,14 @@ export class BlogComponent implements OnInit {
       author: 'Fabian Ramirez',
       date: 'Ago 5  2022',
       imgUrl:
-        '/assets/img/ProfesoraPaola.png',
+        '/assets/img/blog1.png',
     },
     {
       title: '5 diseños industriales destacados ',
       author: 'Daniela Hernandez',
       date: 'Jul 15 2022',
       imgUrl:
-        '/assets/img/ProfesorRafael.png',
+        '/assets/img/blog2.png',
     },
   ];
 
