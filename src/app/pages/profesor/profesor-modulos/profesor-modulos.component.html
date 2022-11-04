@@ -1,57 +1,103 @@
 <section class="container">
+  <section class="container-card">
+    <div class="card-asignatura" style="background: #05b0a1">
+      <h3 class="card-asignatura--title" style="color: white">
+        Operaciones con Fraccionarios
+      </h3>
+      <div
+        class="card-intro"
+        style="
+          background: #05b0a1;
+          background-image: url('/assets/img/Mision_DestinoAventura.png');
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: 90% 100%;
+        "
+      >
+        <!-- <img src="/assets/img/Mision_DestinoAventura.png"> -->
+      </div>
+    </div>
+  </section>
 
-    <section class="container-card">
-        <div class="card-intro" style="background: #3BAEDA;">
-            <img src="/assets/img/Mision_DestinoAventura.png">
-            <h1 class="card-intro--title">Operaciones con Fraccionarios</h1>
-        </div>
-    </section>
-    
-    
-    <h1 class="section-title">Módulos</h1>
+  <h1 class="section-title">Módulos</h1>
 
-    <section class="container-card">
-        <div class="card-asignatura" style="background: yellow;" (click)="goToActividades()">
-            <img src="/assets/img/Modulo_PreparatuViaje.png">
-            <h3 class="card-asignatura--title">PREPARA TU VIAJE</h3>
-            <div class="backdrop-shadow--edit" *ngIf="user.tipo != 'estudiante'">
-                <div class="container-buttons-actions">
-                    <button mat-icon-button class="icon-button-lg">
-                        <mat-icon>edit</mat-icon>
-                    </button>
-                    <button mat-icon-button>
-                        <mat-icon>close</mat-icon>
-                    </button>
-                </div>
-            </div>
+  <section class="container-card">
+    <div
+      class="card-asignatura"
+      style="background: yellow"
+      (click)="goToActividades()"
+    >
+      <h3 class="card-asignatura--title">PREPARA TU VIAJE</h3>
+      <div
+        style="
+          background-image: url('/assets/img/Modulo_PreparatuViaje.png');
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+        "
+        class="backdrop-shadow--edit"
+        *ngIf="user.tipo != 'estudiante'"
+      >
+        <div class="container-buttons-actions">
+          <button mat-icon-button class="icon-button-lg">
+            <mat-icon>edit</mat-icon>
+          </button>
+          <button mat-icon-button>
+            <mat-icon>close</mat-icon>
+          </button>
         </div>
-        <div class="card-asignatura" style="background: red;" (click)="goToActividades()">
-            <img src="/assets/img/Modulo_ViajarDisfrutar.png">
-            <h3 class="card-asignatura--title">A VIAJAR Y DISFRUTAR</h3>
-            <div class="backdrop-shadow--edit" *ngIf="user.tipo != 'estudiante'">
-                <div class="container-buttons-actions">
-                    <button mat-icon-button class="icon-button-lg">
-                        <mat-icon>edit</mat-icon>
-                    </button>
-                    <button mat-icon-button>
-                        <mat-icon>close</mat-icon>
-                    </button>
-                </div>
-            </div>
+      </div>
+    </div>
+    <div
+      class="card-asignatura"
+      style="background: red"
+      (click)="goToActividades()"
+    >
+      <h3 class="card-asignatura--title">A VIAJAR Y DISFRUTAR</h3>
+      <div
+        style="
+          background-image: url('/assets/img/Modulo_ViajarDisfrutar.png');
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+        "
+        class="backdrop-shadow--edit"
+        *ngIf="user.tipo != 'estudiante'"
+      >
+        <div class="container-buttons-actions">
+          <button mat-icon-button class="icon-button-lg">
+            <mat-icon>edit</mat-icon>
+          </button>
+          <button mat-icon-button>
+            <mat-icon>close</mat-icon>
+          </button>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <section class="container-create">
-        <button mat-icon-button *ngIf="user.tipo != 'estudiante'">
-            <mat-icon class="icon-button-create">add_circle_outline</mat-icon>
-        </button>
-        <div class="create-modulos-links">
-            <h1 class="title-link">Recursos</h1>
-            <div class="links">
-                <a href="#" class="flex-center"> <mat-icon class="margin-icon drive">add_to_drive</mat-icon> Google drive</a>
-                <a href="#" class="flex-center"> <mat-icon class="margin-icon video">smart_display</mat-icon> Video tutorial</a>
-            </div>
-        </div>
-    </section>
-
+  <section class="container-create">
+    <button mat-icon-button *ngIf="user.tipo != 'estudiante'">
+      <mat-icon class="icon-button-create">add_circle_outline</mat-icon>
+    </button>
+    <div class="create-modulos-links">
+      <h1 class="title-link">Recursos</h1>
+      <div class="links">
+        <a
+          href="https://drive.google.com/drive/folders/1aUTHwyUhGFtDLMbB2YmyJweu4fkE_cxo"
+          class="flex-center"
+        >
+          <mat-icon class="margin-icon drive">add_to_drive</mat-icon> Google
+          drive</a
+        >
+        <a
+          href="https://www.youtube.com/watch?v=ghHqbExne7c"
+          class="flex-center"
+        >
+          <mat-icon class="margin-icon video">smart_display</mat-icon> Video
+          tutorial</a
+        >
+      </div>
+    </div>
+  </section>
 </section>
