@@ -2,7 +2,8 @@
 
     <section class="container-card">
         <div class="card-intro" style="background: #3BAEDA;">
-            <h1 class="card-intro--title">Matematicas</h1>
+            <img src="/assets/img/Mision_DestinoAventura.png">
+            <h1 class="card-intro--title">Operaciones con Fraccionarios</h1>
         </div>
     </section>
     
@@ -11,6 +12,7 @@
 
     <section class="container-card">
         <div class="card-asignatura" style="background: yellow;" (click)="goToActividades()">
+            <img src="/assets/img/Modulo_PreparatuViaje.png">
             <h3 class="card-asignatura--title">PREPARA TU VIAJE</h3>
             <div class="backdrop-shadow--edit" *ngIf="user.tipo != 'estudiante'">
                 <div class="container-buttons-actions">
@@ -24,6 +26,7 @@
             </div>
         </div>
         <div class="card-asignatura" style="background: red;" (click)="goToActividades()">
+            <img src="/assets/img/Modulo_ViajarDisfrutar.png">
             <h3 class="card-asignatura--title">A VIAJAR Y DISFRUTAR</h3>
             <div class="backdrop-shadow--edit" *ngIf="user.tipo != 'estudiante'">
                 <div class="container-buttons-actions">
