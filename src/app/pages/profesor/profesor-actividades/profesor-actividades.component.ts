@@ -51,7 +51,8 @@ export class ProfesorActividadesComponent implements OnInit {
       if (this.idActivity == 47) {
         this.srcMultimediaContent = 'https://h5p.org/h5p/embed/6725';
       } else if (this.idActivity == 23) {
-        this.srcMultimediaContent = 'https://www.youtube.com/embed/QvwZyZznWTQ';
+        this.srcMultimediaContent =
+          'https://sketchfab.com/models/6ee97010819742a8b8713605695ec703/embed';
       }
     });
   }
