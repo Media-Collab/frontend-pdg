@@ -17,13 +17,13 @@ export class MainComponent implements OnInit {
 
   ngOnInit(): void {
     this.slides[0] = {
-      src: 'https://i.picsum.photos/id/413/200/200.jpg?hmac=e6w034LWyRaayerJY_efJywx28FwPjv-EC8F10jVtMQ',
+      src: '/assets/img/Carousel_1.png',
     };
     this.slides[1] = {
-      src: 'https://i.picsum.photos/id/420/200/200.jpg?hmac=7hdmWb4uHh3ulb7_b_NXZ6QZY_mpCdVcwji4oMqP1Eg',
+      src: '/assets/img/Carousel_2.png',
     };
     this.slides[2] = {
-      src: 'https://i.picsum.photos/id/677/200/200.jpg?hmac=x54KZ3q80hA0Sc36RV2FUoDZdE3R31oaC988MA1YE2s',
+      src: '/assets/img/Carousel_1.png',
     };
   }
 }
