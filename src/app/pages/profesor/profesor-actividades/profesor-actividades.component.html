@@ -5,65 +5,25 @@
 
 <!-- call the function getMultimediaContent in src -->
 
-<div class="sketchfab-embed-wrapper">
-  <iframe
-    title="Dice"
-    frameborder="0"
-    allowfullscreen
-    mozallowfullscreen="true"
-    webkitallowfullscreen="true"
-    allow="autoplay; fullscreen; xr-spatial-tracking"
-    xr-spatial-tracking
-    execution-while-out-of-viewport
-    execution-while-not-rendered
-    web-share
-    src="https://sketchfab.com/models/6ee97010819742a8b8713605695ec703/embed"
-  >
-  </iframe>
-  <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4a4a4a">
-    <a
-      href="https://sketchfab.com/3d-models/dice-6ee97010819742a8b8713605695ec703?utm_medium=embed&utm_campaign=share-popup&utm_content=6ee97010819742a8b8713605695ec703"
-      target="_blank"
-      style="font-weight: bold; color: #1caad9"
-    >
-      Dice
-    </a>
-    by
-    <a
-      href="https://sketchfab.com/macriciox?utm_medium=embed&utm_campaign=share-popup&utm_content=6ee97010819742a8b8713605695ec703"
-      target="_blank"
-      style="font-weight: bold; color: #1caad9"
-    >
-      macriciox
-    </a>
-    on
-    <a
-      href="https://sketchfab.com?utm_medium=embed&utm_campaign=share-popup&utm_content=6ee97010819742a8b8713605695ec703"
-      target="_blank"
-      style="font-weight: bold; color: #1caad9"
-      >Sketchfab</a
-    >
-  </p>
-</div>
 <script
   src="https://h5p.org/sites/all/modules/h5p/library/js/h5p-resizer.js"
   charset="UTF-8"
 ></script>
 
-<mat-grid-list cols="1" rowHeight="30rem">
-  <mat-grid-tile>
-    <section class="activity-display">
-      <iframe
-        [src]="srcMultimediaContent | safe"
-        height="800"
-        width="100%"
-        title="Example"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      ></iframe>
-    </section>
-  </mat-grid-tile>
+<section class="activity-display">
+  <iframe
+    [src]="srcMultimediaContent | safe"
+    height="450"
+    width="100%"
+    margin="auto"
+    title="Example"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen
+  ></iframe>
+</section>
+
+<mat-grid-list cols="1" rowHeight="20rem">
   <mat-grid-tile>
     <section class="activity-card">
       <h2>{{ activityTitle }}</h2>
@@ -74,32 +34,8 @@
   <mat-grid-tile>
     <section class="activity-questions">
       <h2>Comprobación de preguntas</h2>
-      <mat-form-field appearance="fill">
-        <mat-label>¿Insertar alguna pregunta aquí?</mat-label>
-        <input
-          type="text"
-          name="pregunta"
-          matInput
-          [(ngModel)]="inputPregunta"
-          maxlength="250"
-          placeholder="¿Insertar alguna pregunta aquí?"
-          required
-        />
-      </mat-form-field>
-      <mat-form-field appearance="fill">
-        <mat-label>¿Insertar alguna pregunta aquí?</mat-label>
-        <input
-          type="text"
-          name="pregunta"
-          matInput
-          [(ngModel)]="inputPregunta"
-          maxlength="250"
-          placeholder="¿Insertar alguna pregunta aquí?"
-          required
-        />
-      </mat-form-field>
-      <mat-form-field appearance="fill">
-        <mat-label>¿Insertar alguna pregunta aquí?</mat-label>
+      <mat-form-field appearance="fill" *ngFor="let question of questions">
+        <mat-label>{{ question.option }}</mat-label>
         <input
           type="text"
           name="pregunta"
