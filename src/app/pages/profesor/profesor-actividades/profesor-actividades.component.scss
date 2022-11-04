@@ -1,0 +1,40 @@
+mat-grid-list {
+  margin-top: 2rem;
+}
+.activity-display {
+  width: 80vw;
+  height: 70vh;
+  background-color: black;
+}
+
+.activity-card {
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 80vw;
+  justify-content: center;
+  margin: auto;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.activity-questions {
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+  align-items: center;
+  width: 80vw;
+  justify-content: center;
+  margin: auto;
+  //   border: 1px solid black;
+  //   border-radius: 5px;
+}
+
+.btn-next {
+  width: 50vw;
+}
+
+mat-form-field {
+  width: 50vw;
+}
