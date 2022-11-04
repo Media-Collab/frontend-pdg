@@ -13,6 +13,8 @@ export class ProfesorActividadesComponent implements OnInit {
   public idActivity: number = 0;
   private sub: any;
 
+  public questions: any[] = [];
+
   public loading: boolean = false;
   public activityTitle: string = 'Actividad 1';
   public topics: string = 'Pensamiento crítico';
@@ -29,6 +31,22 @@ export class ProfesorActividadesComponent implements OnInit {
     {
       type: 'game',
       src: 'build',
+    },
+  ];
+
+  public preguntas1: any = [
+    {
+      option: '¿Cuánto presupuesto sería si fueran 3 personas?',
+    },
+    {
+      option:
+        '¿Cuántas combinaciones se pueden relizar con un dado de resultado 3?',
+    },
+  ];
+
+  public preguntas2: any = [
+    {
+      option: '¿Qué cantidad se uede obtener si sale un valor de 6?',
     },
   ];
 
@@ -50,9 +68,19 @@ export class ProfesorActividadesComponent implements OnInit {
       console.log(this.idActivity);
       if (this.idActivity == 47) {
         this.srcMultimediaContent = 'https://h5p.org/h5p/embed/6725';
+        this.activityTitle = 'INU ¿Qué vamos a comer?';
+        this.topics = 'Pensamiento crítico | Análisis de problemas';
+        this.questions = this.preguntas1;
       } else if (this.idActivity == 23) {
+        this.srcMultimediaContent = 'https://www.youtube.com/embed/q0heH1FMCQU';
+        this.activityTitle = 'KUGULA ¿Qué vamos a comprar?';
+        this.topics = 'Pensamiento crítico';
+        this.questions = this.preguntas2;
+      } else if (this.idActivity == 11) {
         this.srcMultimediaContent =
           'https://sketchfab.com/models/6ee97010819742a8b8713605695ec703/embed';
+        this.activityTitle = 'KUGULA ¿Qué vamos a comprar?';
+        this.topics = 'Análisis de problemas';
       }
     });
   }
