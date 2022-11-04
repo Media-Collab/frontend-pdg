@@ -10,39 +10,38 @@
 -->
 
 <section class="container">
-    <h1 class="section-title title-resultados">Resultados</h1>
+  <h1 class="section-title title-resultados">Resultados</h1>
 
-    <div class="container-actions-header">
-        <button mat-icon-button class="icon-button-lg">
-            <mat-icon>download</mat-icon>
-        </button>
-        <div class="input-search-container">
-            <input type="text" placeholder="Buscar" class="input">
-            <button class="button-search">
-                <mat-icon>search</mat-icon>
-            </button>
-        </div>
+  <div class="container-actions-header">
+    <button mat-icon-button class="icon-button-lg" (click)="exportar()">
+      <mat-icon>download</mat-icon>
+    </button>
+    <div class="input-search-container">
+      <input type="text" placeholder="Buscar" class="input" />
+      <button class="button-search">
+        <mat-icon>search</mat-icon>
+      </button>
     </div>
+  </div>
 
-    <section class="container-table">
-        <table cTable>
-            <thead>
-                <tr>
-                    <th scope="col">Opcion</th>
-                    <th scope="col">Actividad asociada</th>
-                    <th scope="col">Respuesta</th>
-                    <th scope="col">Tiempo</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr *ngFor="let value of data">
-                    <th>{{value.opcion}}</th>
-                    <th>{{value.actividad}}</th>
-                    <th>{{value.respuesta}}</th>
-                    <th>{{value.tiempo}}</th>
-                </tr>
-            </tbody>
-        </table>
-    </section>
-
+  <section class="container-table">
+    <table cTable>
+      <thead>
+        <tr>
+          <th scope="col">Opcion</th>
+          <th scope="col">Actividad asociada</th>
+          <th scope="col">Respuesta</th>
+          <th scope="col">Tiempo</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let value of data">
+          <th>{{ value.opcion }}</th>
+          <th>{{ value.actividad }}</th>
+          <th>{{ value.respuesta }}</th>
+          <th>{{ value.tiempo }}</th>
+        </tr>
+      </tbody>
+    </table>
+  </section>
 </section>
