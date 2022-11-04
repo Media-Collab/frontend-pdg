@@ -1,7 +1,47 @@
 <section class="container">
   <h1 class="section-title">Actividades</h1>
+    <c-container>
+        <c-row class="align-items-start">
+            <c-col xs="12" md="6" class="p-2">
+                <div class="card-actividades" style="background: orange;" (click)="goToActividad(1)">
+                    <h3 class="card-actividades--title">Lista de compras</h3>
+                    <div class="backdrop-shadow--edit" *ngIf="user.tipo != 'estudiante'">
+                        <div class="container-buttons-actions">
+                            <button mat-icon-button>
+                                <mat-icon>edit</mat-icon>
+                            </button>
+                            <button mat-icon-button>
+                                <mat-icon>close</mat-icon>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </c-col>
+            <c-col xs="12" md="6" class="p-2">
+                <div class="card-actividades" style="background: orange;" (click)="goToActividad(2)">
+                    <h3 class="card-actividades--title">Lista de compras</h3>
+                    <div class="backdrop-shadow--edit" *ngIf="user.tipo != 'estudiante'">
+                        <div class="container-buttons-actions">
+                            <button mat-icon-button class="icon-button-lg">
+                                <mat-icon>edit</mat-icon>
+                            </button>
+                            <button mat-icon-button>
+                                <mat-icon>close</mat-icon>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </c-col>
+        </c-row>
 
-  <c-container>
+        <section class="container-create" *ngIf="user.tipo != 'estudiante'">
+            <button mat-icon-button>
+                <mat-icon class="icon-button-create">add_circle_outline</mat-icon>
+            </button>
+        </section>
+    </c-container>
+
+  <!-- <c-container>
     <c-row class="align-items-start">
       <c-col xs="12" md="6" class="p-2">
         <div
@@ -48,5 +88,5 @@
         <mat-icon class="icon-button-create">add_circle_outline</mat-icon>
       </button>
     </section>
-  </c-container>
+  </c-container> -->
 </section>

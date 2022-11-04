@@ -5,7 +5,7 @@ import { ProfesorModulosComponent } from './profesor-modulos/profesor-modulos.co
 import { ProfesorActividadesComponent } from './profesor-actividades/profesor-actividades.component';
 import { ProfesorActividadesListaComponent } from './profesor-actividades-lista/profesor-actividades-lista.component';
 import { ProfesorMisionesComponent } from './profesor-misiones/profesor-misiones.component';
-import { GridModule } from '@coreui/angular';
+import { GridModule, TableModule } from '@coreui/angular';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatGridListModule } from '@angular/material/grid-list';
@@ -23,6 +23,7 @@ import { ProfesorResultadosComponent } from './profesor-resultados/profesor-resu
     MatGridListModule,
     FormsModule,
     MatInputModule,
+    TableModule
   ],
   declarations: [
     ProfesorAsignaturasComponent,
