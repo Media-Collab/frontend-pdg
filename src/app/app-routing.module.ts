@@ -17,6 +17,7 @@ import { ProfesorMisionesComponent } from './pages/profesor/profesor-misiones/pr
 import { ProfesorModulosComponent } from './pages/profesor/profesor-modulos/profesor-modulos.component';
 import { ProfesorActividadesListaComponent } from './pages/profesor/profesor-actividades-lista/profesor-actividades-lista.component';
 import { ProfesorActividadesComponent } from './pages/profesor/profesor-actividades/profesor-actividades.component';
+import { ProfesorResultadosComponent } from './pages/profesor/profesor-resultados/profesor-resultados.component';
 
 const routes: Routes = [
   {
@@ -80,6 +81,11 @@ const routes: Routes = [
   {
     path: 'testActividad',
     component: CreateActivityComponent,
+  },
+  {
+    path: 'resultados',
+    component: ProfesorResultadosComponent,
+    canActivate: [GuardTestGuard],
   },
 ];
 

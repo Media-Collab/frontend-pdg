@@ -8,14 +8,21 @@ import { ProfesorMisionesComponent } from './profesor-misiones/profesor-misiones
 import { GridModule } from '@coreui/angular';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
-
+import { MatGridListModule } from '@angular/material/grid-list';
+import { SafePipe } from 'src/app/pipes/safe.pipe';
+import { FormsModule } from '@angular/forms';
+import { MatInputModule } from '@angular/material/input';
+import { ProfesorResultadosComponent } from './profesor-resultados/profesor-resultados.component';
 
 @NgModule({
   imports: [
     CommonModule,
     GridModule,
     MatIconModule,
-    MatButtonModule
+    MatButtonModule,
+    MatGridListModule,
+    FormsModule,
+    MatInputModule,
   ],
   declarations: [
     ProfesorAsignaturasComponent,
@@ -23,6 +30,8 @@ import { MatButtonModule } from '@angular/material/button';
     ProfesorActividadesComponent,
     ProfesorActividadesListaComponent,
     ProfesorMisionesComponent,
+    SafePipe,
+    ProfesorResultadosComponent,
   ],
 })
-export class ProfesorModule { }
+export class ProfesorModule {}

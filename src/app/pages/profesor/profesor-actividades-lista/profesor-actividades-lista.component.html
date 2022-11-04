@@ -1,10 +1,10 @@
 <section class="container">
-    <h1 class="section-title">Actividades</h1>
+  <h1 class="section-title">Actividades</h1>
 
     <c-container>
         <c-row class="align-items-start">
             <c-col xs="12" md="6" class="p-2">
-                <div class="card-actividades" style="background: orange;" (click)="goToActividad()">
+                <div class="card-actividades" style="background: orange;" (click)="goToActividad(1)">
                     <h3 class="card-actividades--title">Lista de compras</h3>
                     <div class="backdrop-shadow--edit" *ngIf="user.tipo != 'estudiante'">
                         <div class="container-buttons-actions">
@@ -19,7 +19,7 @@
                 </div>
             </c-col>
             <c-col xs="12" md="6" class="p-2">
-                <div class="card-actividades" style="background: orange;" (click)="goToActividad()">
+                <div class="card-actividades" style="background: orange;" (click)="goToActividad(2)">
                     <h3 class="card-actividades--title">Lista de compras</h3>
                     <div class="backdrop-shadow--edit" *ngIf="user.tipo != 'estudiante'">
                         <div class="container-buttons-actions">
