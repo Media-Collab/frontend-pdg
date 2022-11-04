@@ -107,6 +107,12 @@
             <a routerLink="/nosotros" cDropdownItem>Nosotros</a>
           </li>
           <li>
+             <a  routerLink="/asignaturas" cDropdownItem *ngIf="isLog">Asignaturas</a>
+          </li>
+          <li>
+             <a  routerLink="/resultados"  *ngIf="isLog && user.tipo != 'estudiante'">Resultados</a>
+          </li>
+          <li>
             <hr cDropdownDivider />
           </li>
           <li>
