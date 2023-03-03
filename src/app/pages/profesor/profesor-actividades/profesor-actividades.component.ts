@@ -44,7 +44,8 @@ export class ProfesorActividadesComponent implements OnInit {
       'assets/build/index.pck',
       'assets/build/index.wasm'
     );
-    console.log(configGodot);
+    console.log('Godot config: ', configGodot);
+
     this.sub = this.route.params.subscribe((params) => {
       this.idActivity = +params['id']; //El mas convierte el parametro a numero.
       console.log(this.idActivity);
