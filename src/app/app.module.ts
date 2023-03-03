@@ -12,6 +12,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { GridModule } from '@coreui/angular';
 import { MatIconModule } from '@angular/material/icon';
 import { ProfesorModule } from './pages/profesor/profesor.module';
+
 // import { MatGridListModule } from '@angular/material/grid-list';
 // import { SafePipe } from 'src/app/pipes/safe.pipe';
 // import { MatInputModule } from '@angular/material/input';

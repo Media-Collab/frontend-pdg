@@ -8,18 +8,39 @@ import { Component, OnInit } from '@angular/core';
 export class UsComponent implements OnInit {
   public blogs: any[] = [
     {
-      name: 'John Doe',
-      mail: 'example@gmail.com',
-      url: 'https://i.picsum.photos/id/413/200/200.jpg?hmac=e6w034LWyRaayerJY_efJywx28FwPjv-EC8F10jVtMQ',
+      name: 'Paola Andrea Castillo Beltrán',
+      mail: 'pacastillo@uao.edu.co',
+      url: 'https://www.uao.edu.co/perfil/paola-andrea-castillo-beltran/',
       imgUrl:
-        'https://i.picsum.photos/id/413/200/200.jpg?hmac=e6w034LWyRaayerJY_efJywx28FwPjv-EC8F10jVtMQ',
+        '/assets/img/ProfesoraPaola.png',
     },
     {
-      name: 'John Doe',
-      mail: 'example@gmail.com',
-      url: 'https://i.picsum.photos/id/420/200/200.jpg?hmac=7hdmWb4uHh3ulb7_b_NXZ6QZY_mpCdVcwji4oMqP1Eg',
+      name: 'Rafael Mauricio Martínez Gutiérrez',
+      mail: 'rmmartinez@uao.edu.co',
+      url: 'https://www.uao.edu.co/perfil/rafael-mauricio-martinez-gutierrez/',
       imgUrl:
-        'https://i.picsum.photos/id/420/200/200.jpg?hmac=7hdmWb4uHh3ulb7_b_NXZ6QZY_mpCdVcwji4oMqP1Eg',
+        '/assets/img/ProfesorRafael.png',
+    },
+    {
+      name: 'Jimmy Gilberto Dávila Vélez',
+      mail: 'jgdavila@uao.edu.co',
+      url: 'https://www.uao.edu.co/perfil/jimmy-gilberto-davila-velez/',
+      imgUrl:
+        '/assets/img/ProfesorJimmy.png',
+    },
+    {
+      name: 'Boris Villamil Ramírez',
+      mail: 'web@radcolombia.org',
+      url: 'https://radcolombia.org/web/boris-villamil-ramirez',
+      imgUrl:
+        '/assets/img/ProfesorBoris.png',
+    },
+    {
+      name: 'Miguel Fernando Gonzalez Arana',
+      mail: 'web@radcolombia.org',
+      url: 'https://www.linkedin.com/in/miguel-fdo-gonzalez/?originalSubdomain=co',
+      imgUrl:
+        '/assets/img/ProfesorMiguel.png',
     },
   ];
 
