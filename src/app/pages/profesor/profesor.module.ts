@@ -13,6 +13,7 @@ import { SafePipe } from 'src/app/pipes/safe.pipe';
 import { FormsModule } from '@angular/forms';
 import { MatInputModule } from '@angular/material/input';
 import { ProfesorResultadosComponent } from './profesor-resultados/profesor-resultados.component';
+import { MaterialModule } from '../../../material.module';
 
 @NgModule({
   imports: [
@@ -23,7 +24,8 @@ import { ProfesorResultadosComponent } from './profesor-resultados/profesor-resu
     MatGridListModule,
     FormsModule,
     MatInputModule,
-    TableModule
+    TableModule,
+    MaterialModule,
   ],
   declarations: [
     ProfesorAsignaturasComponent,

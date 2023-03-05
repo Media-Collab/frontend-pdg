@@ -1,9 +1,27 @@
-<canvas id="canvas">
+<!-- <canvas id="canvas">
   HTML5 canvas appears to be unsupported in the current browser.<br />
   Please try updating or use a different browser.
-</canvas>
+</canvas> -->
 
 <!-- call the function getMultimediaContent in src -->
+<div class="example-boundary">
+  <div class="example-box" cdkDragBoundary=".example-boundary" cdkDrag>
+    I can only be dragged within the dotted container
+  </div>
+</div>
+
+<div class="example-box" cdkDrag>
+  I can only be dragged using the handle
+
+  <div class="example-handle" cdkDragHandle>
+    <svg width="24px" fill="currentColor" viewBox="0 0 24 24">
+      <path
+        d="M10 9h4V6h3l-5-5-5 5h3v3zm-1 1H6V7l-5 5 5 5v-3h3v-4zm14 2l-5-5v3h-3v4h3v3l5-5zm-9 3h-4v3H7l5 5 5-5h-3v-3z"
+      ></path>
+      <path d="M0 0h24v24H0z" fill="none"></path>
+    </svg>
+  </div>
+</div>
 
 <script
   src="https://h5p.org/sites/all/modules/h5p/library/js/h5p-resizer.js"
