@@ -1,21 +1,22 @@
 <section class="container">
   <section class="container-card">
     <div class="card-asignatura" style="background: #05b0a1">
-      <h3 class="card-asignatura--title" style="color: white">
+      <h3
+        class="card-asignatura--title"
+        style="color: white; position: absolute"
+      >
         Operaciones con Fraccionarios
       </h3>
       <div
         class="card-intro"
         style="
           background: #05b0a1;
-          background-image: url('https://i.imgur.com/xc3cdJO.png');
+          background-image: url('./assets/imgs/logo.JPG');
           background-position: center;
           background-repeat: no-repeat;
-          background-size: 90% 110%;
+          background-size: cover;
         "
-      >
-        <!-- <img src="/assets/img/Mision_DestinoAventura.png"> -->
-      </div>
+      ></div>
     </div>
   </section>
 
@@ -48,15 +49,31 @@
         </div>
       </div>
     </div>
-    <div
-      class="card-asignatura"
-      style="background: red"
-      (click)="goToActividades()"
-    >
+
+    <div class="card-asignatura" (click)="goToActividades()">
+      <h3
+        class="card-asignatura--title"
+        style="color: white; position: absolute"
+      >
+        Operaciones con Fraccionarios
+      </h3>
+      <div
+        class="card-intro"
+        style="
+          background: #05b0a1;
+          background-image: url('./assets/imgs/bg_module_2.png');
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        "
+      ></div>
+    </div>
+
+    <div class="card-asignatura" (click)="goToActividades()">
       <h3 class="card-asignatura--title">A VIAJAR Y DISFRUTAR</h3>
       <div
         style="
-          background-image: url('https://i.imgur.com/C2RXNtu.png');
+          background-image: url('./assets/imgs/bg_module_2.png');
           background-size: cover;
           background-position: center;
           background-repeat: no-repeat;
