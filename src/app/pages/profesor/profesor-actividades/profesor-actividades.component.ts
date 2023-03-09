@@ -46,7 +46,16 @@ export class ProfesorActividadesComponent implements OnInit {
 
   public preguntas2: any = [
     {
-      option: '¿Qué cantidad se uede obtener si sale un valor de 6?',
+      option:
+        'Inicias el recoorrido y tras avanzar 1/8 del total de Jm a recorrer, se pincha un neumático, ¿Cuánto avanzaste?',
+    },
+    {
+      option:
+        'Para buscar ayuda y reparar el nemático te devuelves 2500Dm hasta la vulcanizadora más cercana, ¿A qué distancia esta la vulcanizadora del inicio del recorrido?',
+    },
+    {
+      option:
+        'Una vez reparad el neumático avanzas hasta la mitad del recorrido total (1/2), ¿A qué distancia del punto de inicio queda la mitad del recorrido?',
     },
   ];
 
@@ -80,8 +89,11 @@ export class ProfesorActividadesComponent implements OnInit {
       } else if (this.idActivity == 11) {
         this.srcMultimediaContent =
           'https://sketchfab.com/models/6ee97010819742a8b8713605695ec703/embed';
-        this.activityTitle = 'KUGULA ¿Qué vamos a comprar?';
-        this.topics = 'Análisis de problemas';
+        // this.activityTitle = 'KUGULA ¿Qué vamos a comprar?';
+        this.activityTitle = 'Actividad 4. SAFARKA ¿A dónde vamos?';
+        // this.topics = 'Análisis de problemas';
+        this.topics =
+          'Mediante un tablero que presenta un recorrido, los estudiantes deben seleccionar un medio de transporte y resolver operaciones que se presentan a manera de actividades como despinchar el auto, recargar combustible, visitar lugares destacados de la ruta, durante el recorrido. Vas a realizar un recorrido de 1000 Km por Colombia';
       }
       this.questions = this.preguntas2;
     });
