@@ -65,6 +65,48 @@
           </div>
         </div>
       </c-col>
+      <c-col xs="12" md="6" class="p-2">
+        <div
+          class="card-actividades"
+          style="background: #be35fe"
+          (click)="goToActividad(4)"
+        >
+          <h3 class="card-actividades--title" style="color: white">
+            SAFARKA ¿A dónde vamos?
+          </h3>
+          <div class="backdrop-shadow--edit" *ngIf="user.tipo != 'estudiante'">
+            <div class="container-buttons-actions">
+              <button mat-icon-button class="icon-button-lg">
+                <mat-icon>edit</mat-icon>
+              </button>
+              <button mat-icon-button>
+                <mat-icon>close</mat-icon>
+              </button>
+            </div>
+          </div>
+        </div>
+      </c-col>
+      <c-col xs="12" md="6" class="p-2">
+        <div
+          class="card-actividades"
+          style="background: #35fe4d"
+          (click)="goToActividad(5)"
+        >
+          <h3 class="card-actividades--title" style="color: white">
+            CURSUS: ¿Qué hay en la ciudad?
+          </h3>
+          <div class="backdrop-shadow--edit" *ngIf="user.tipo != 'estudiante'">
+            <div class="container-buttons-actions">
+              <button mat-icon-button class="icon-button-lg">
+                <mat-icon>edit</mat-icon>
+              </button>
+              <button mat-icon-button>
+                <mat-icon>close</mat-icon>
+              </button>
+            </div>
+          </div>
+        </div>
+      </c-col>
     </c-row>
 
     <section class="container-create" *ngIf="user.tipo != 'estudiante'">

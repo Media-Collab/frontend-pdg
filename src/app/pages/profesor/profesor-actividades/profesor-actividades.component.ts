@@ -89,11 +89,19 @@ export class ProfesorActividadesComponent implements OnInit {
       } else if (this.idActivity == 11) {
         this.srcMultimediaContent =
           'https://sketchfab.com/models/6ee97010819742a8b8713605695ec703/embed';
-        // this.activityTitle = 'KUGULA ¿Qué vamos a comprar?';
-        this.activityTitle = 'Actividad 4. SAFARKA ¿A dónde vamos?';
-        // this.topics = 'Análisis de problemas';
+        this.activityTitle = 'KUGULA ¿Qué vamos a comprar?';
         this.topics =
-          'Mediante un tablero que presenta un recorrido, los estudiantes deben seleccionar un medio de transporte y resolver operaciones que se presentan a manera de actividades como despinchar el auto, recargar combustible, visitar lugares destacados de la ruta, durante el recorrido. Vas a realizar un recorrido de 1000 Km por Colombia';
+          'El docente ubica en una estantería fichas que representan los distintos productos y precios que aparecen en las tarjetas con las que interactuaron en la actividad 1. Los estudiantes deben identificar el costo de los alimentos que vayan a llevar al viaje, estos pueden provenir del listado de alimentos que definieron en la actividad 1 o de un listado que el profesor provee .';
+      } else if (this.idActivity == 4) {
+        this.srcMultimediaContent = 'https://www.youtube.com/embed/YOvJpU2UBbk';
+        this.activityTitle = 'SAFARKA ¿A dónde vamos?';
+        this.topics =
+          'Mediante un tablero que presenta un recorrido, los estudiantes deben seleccionar un medio de transporte y resolver operaciones que se presentan a manera de actividades como despinchar el auto, recargar combustible, visitar lugares destacados de la ruta, durante el recorrido';
+      } else if (this.idActivity == 5) {
+        this.srcMultimediaContent = 'https://www.youtube.com/embed/YOvJpU2UBbk';
+        this.activityTitle = 'CURSUS: ¿Qué hay en la ciudad?';
+        this.topics =
+          'Mediante un mapa de una ciudad o un plano cartesiano (dependiendo de la complejidad) se seleccionan diferentes lugares para conocer, estos pueden ser museos, parques, lugares turísticos destacados, centros comerciales, entre algunos. Cada lugar cuenta con una ubicación que se describe a manera de coordenadas y los estudiantes deben ubicar dichas coordenadas en el mapa.';
       }
       this.questions = this.preguntas2;
     });
