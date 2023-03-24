@@ -14,7 +14,7 @@ import { FormsModule } from '@angular/forms';
 import { MatInputModule } from '@angular/material/input';
 import { ProfesorResultadosComponent } from './profesor-resultados/profesor-resultados.component';
 import { MaterialModule } from '../../../material.module';
-
+import { MatDialogModule } from '@angular/material/dialog';
 @NgModule({
   imports: [
     CommonModule,
@@ -24,6 +24,7 @@ import { MaterialModule } from '../../../material.module';
     MatGridListModule,
     FormsModule,
     MatInputModule,
+    MatDialogModule,
     TableModule,
     MaterialModule,
   ],

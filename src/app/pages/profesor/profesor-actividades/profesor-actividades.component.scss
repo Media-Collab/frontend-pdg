@@ -28,6 +28,9 @@
   background-size: 80%;
   background-position: center;
 }
+button {
+  margin-right: 8px;
+}
 
 .cartilla5 {
   width: 23vw;
@@ -52,7 +55,9 @@
 }
 
 .player,
-.player5 {
+.player5,
+.card1,
+.card2 {
   width: 100px;
   height: 100px;
   border: none;
@@ -81,7 +86,10 @@
 .example-box {
   background-image: url("../../../../assets/imgs/act_four/Museo.JPG");
 }
-
+.img-show {
+  width: auto;
+  height: 25vh;
+}
 .player {
   background-image: url("../../../../assets/imgs/games/4/pieza1.png");
 }
@@ -89,6 +97,15 @@
 .player5 {
   background-image: url("../../../../assets/imgs/games/4/pieza1.png");
 }
+
+.card1 {
+  background-image: url("../../../../assets/imgs/games/3/pieza1.png");
+}
+
+.card2 {
+  background-image: url("../../../../assets/imgs/games/3/pieza2.png");
+}
+
 .cartilla5 {
   background-image: url("../../../../assets/imgs/games/5/cartilla.png");
 }
@@ -118,6 +135,14 @@
   box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
     0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
 }
+.card1:active {
+  box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
+    0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
+}
+.card2:active {
+  box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
+    0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
+}
 .zone1:active {
   box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
     0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
@@ -141,6 +166,17 @@
   max-width: 100%;
   border: dotted #ccc 2px;
   background-image: url("../../../../assets/imgs/games/4/atv.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.board3 {
+  width: 100%;
+  height: 100vh;
+  max-width: 100%;
+  border: dotted #ccc 2px;
+  background-image: url("../../../../assets/imgs/games/3/atv.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right;

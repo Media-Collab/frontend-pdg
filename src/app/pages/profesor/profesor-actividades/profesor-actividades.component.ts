@@ -1,14 +1,33 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Inject } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+import { MatDialog, MAT_DIALOG_DATA } from '@angular/material/dialog';
+
+export interface DialogData {
+  animal: 'panda' | 'unicorn' | 'lion';
+}
+
 declare var configGodot: any;
 
+@Component({
+  selector: 'dialog-elements-example-dialog',
+  templateUrl: 'dialog-elements-example-dialog.html',
+})
+export class DialogElementsExampleDialog {}
 @Component({
   selector: 'app-profesor-actividades',
   templateUrl: './profesor-actividades.component.html',
   styleUrls: ['./profesor-actividades.component.scss'],
 })
 export class ProfesorActividadesComponent implements OnInit {
+  constructor(
+    public route: ActivatedRoute,
+    public router: Router,
+    public dialog: MatDialog
+  ) {}
   // get the id from the url and save it in a variable
+  openDialog() {
+    this.dialog.open(DialogElementsExampleDialog);
+  }
 
   public idActivity: number = 0;
   private sub: any;
@@ -62,8 +81,6 @@ export class ProfesorActividadesComponent implements OnInit {
   public indexMultimediaContent: number = 0;
   public srcMultimediaContent: string =
     'https://www.youtube.com/embed/QvwZyZznWTQ';
-
-  constructor(public route: ActivatedRoute, public router: Router) {}
 
   ngOnInit(): void {
     configGodot(
