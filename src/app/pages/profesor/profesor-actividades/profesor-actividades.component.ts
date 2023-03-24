@@ -1,4 +1,4 @@
-import { Component, OnInit, Inject } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { MatDialog, MAT_DIALOG_DATA } from '@angular/material/dialog';
 
@@ -19,18 +19,83 @@ export class DialogElementsExampleDialog {}
   styleUrls: ['./profesor-actividades.component.scss'],
 })
 export class ProfesorActividadesComponent implements OnInit {
+  public idActivity: number = 0;
+  private sub: any;
+
+  @ViewChild('canvas', { static: true })
+  canvas!: ElementRef<HTMLCanvasElement>;
+  result: number;
+
   constructor(
     public route: ActivatedRoute,
     public router: Router,
     public dialog: MatDialog
-  ) {}
+  ) {
+    this.result = 0;
+  }
   // get the id from the url and save it in a variable
   openDialog() {
     this.dialog.open(DialogElementsExampleDialog);
   }
 
-  public idActivity: number = 0;
-  private sub: any;
+  rollDice() {
+    const ctx = this.canvas.nativeElement.getContext('2d');
+    if (ctx) {
+      ctx.clearRect(
+        0,
+        0,
+        this.canvas.nativeElement.width,
+        this.canvas.nativeElement.height
+      );
+
+      // Resto del código
+      ctx.clearRect(
+        0,
+        0,
+        this.canvas.nativeElement.width,
+        this.canvas.nativeElement.height
+      );
+
+      const diceSize = 200;
+      const diceX = this.canvas.nativeElement.width / 2 - diceSize / 2;
+      const diceY = this.canvas.nativeElement.height / 2 - diceSize / 2;
+
+      ctx.fillStyle = 'white';
+      ctx.strokeStyle = 'black';
+      ctx.fillRect(diceX, diceY, diceSize, diceSize);
+      ctx.strokeRect(diceX, diceY, diceSize, diceSize);
+
+      const dotSize = diceSize / 8;
+      const dotSpacing = dotSize * 2;
+
+      const dots = [
+        [], // 0
+        [4], // 1
+        [1, 7], // 2
+        [1, 4, 7], // 3
+        [0, 1, 7, 8], // 4
+        [0, 1, 4, 7, 8], // 5
+        [0, 1, 3, 5, 7, 8], // 6
+      ];
+
+      const dotPositions = dots[Math.floor(Math.random() * 6) + 1];
+
+      ctx.fillStyle = 'black';
+      for (let i = 0; i < dotPositions.length; i++) {
+        const dotX =
+          diceX + dotSpacing + (dotSize + dotSpacing) * (dotPositions[i] % 3);
+        const dotY =
+          diceY +
+          dotSpacing +
+          (dotSize + dotSpacing) * Math.floor(dotPositions[i] / 3);
+        ctx.beginPath();
+        ctx.arc(dotX, dotY, dotSize / 2, 0, Math.PI * 2);
+        ctx.fill();
+      }
+
+      this.result = dotPositions.length;
+    }
+  }
 
   public questions: any[] = [];
 
@@ -101,7 +166,8 @@ export class ProfesorActividadesComponent implements OnInit {
       } else if (this.idActivity == 23) {
         this.srcMultimediaContent = 'https://www.youtube.com/embed/q0heH1FMCQU';
         this.activityTitle = 'KOFER ¿Qué vamos a llevar?';
-        this.topics = 'Pensamiento crítico';
+        this.topics =
+          'Los estudiantes definen el lugar de viaje a partir de las opciones que brinda el juego, posteriormente seleccionan 12 objetos de un listado teniendo en cuenta la pertinencia de estos en el lugar al que van a viajar y a partir de estos objetos realizan operaciones de medición de volúmenes mediante bloques de madera que representan los objetos seleccionados';
         this.questions = this.preguntas2;
       } else if (this.idActivity == 11) {
         this.srcMultimediaContent =
