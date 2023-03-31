@@ -97,6 +97,16 @@ export class ProfesorActividadesComponent implements OnInit {
     }
   }
 
+  rotate = 'rotate(0deg)';
+
+  rotateDiv() {
+    const currentRotation = this.rotate.match(/\d+/);
+    if (currentRotation) {
+      const newRotation = (parseInt(currentRotation[0]) + 90) % 360;
+      this.rotate = `rotate(${newRotation}deg)`;
+    }
+  }
+
   public questions: any[] = [];
 
   public loading: boolean = false;

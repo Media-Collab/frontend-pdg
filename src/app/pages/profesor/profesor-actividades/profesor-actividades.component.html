@@ -1,10 +1,11 @@
-<div class="example-boundary">
+<!-- game 4 -->
+<!-- <div class="example-boundary">
   <div class="player" cdkDragBoundary=".example-boundary" cdkDrag></div>
   <div class="zone1" cdkDragBoundary=".example-boundary" cdkDrag></div>
   <div class="zone2" cdkDragBoundary=".example-boundary" cdkDrag></div>
   <div class="zone3" cdkDragBoundary=".example-boundary" cdkDrag></div>
   <div class="zone4" cdkDragBoundary=".example-boundary" cdkDrag></div>
-</div>
+</div> -->
 <!-- <div class="example-box" cdkDrag>
   <div class="example-handle" cdkDragHandle>
     <svg width="24px" fill="currentColor" viewBox="0 0 24 24">
@@ -38,9 +39,39 @@
 </div> -->
 
 <!-- game 1 -->
-<!-- <canvas class="dice" #canvas></canvas>
+<canvas class="dice" #canvas></canvas>
 <button mat-button (click)="rollDice()">Lanzar dado</button>
-<div>Resultado: {{ result }}</div> -->
+<div>Resultado: {{ result }}</div>
+
+<!-- game 2 -->
+<!-- <div class="board2">
+  <img src="assets/imgs/games/2/texture.png" alt="" class="texture" />
+  <div
+    class="item1"
+    cdkDragBoundary=".board2"
+    cdkDrag
+    [style.transform]="rotate"
+  >
+
+    <button mat-icon-button class="rotate" (click)="rotateDiv()">
+      <mat-icon>rotate_right</mat-icon>
+    </button>
+  </div>
+
+  <div
+    class="item2"
+    cdkDragBoundary=".board2"
+    cdkDrag
+    [style.transform]="rotate"
+  >
+
+    <button mat-icon-button class="rotate" (click)="rotateDiv()">
+      <mat-icon>rotate_right</mat-icon>
+    </button>
+  </div>
+  <div class="item3" cdkDragBoundary=".board2" cdkDrag></div>
+  <div class="item4" cdkDragBoundary=".board2" cdkDrag></div>
+</div> -->
 
 <script
   src="https://h5p.org/sites/all/modules/h5p/library/js/h5p-resizer.js"
